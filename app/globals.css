@@ -183,11 +183,11 @@
     }
 
     p {
-      @apply text-light-200 text-sm font-light;
+      @apply text-light-200 text-sm font-medium;
     }
 
     .datetime {
-      @apply text-light-200 flex flex-row flex-wrap items-center gap-4;
+      @apply text-white flex flex-row flex-wrap items-center gap-4;
 
       div {
         @apply flex flex-row gap-2;
