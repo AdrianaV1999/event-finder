@@ -1,7 +1,7 @@
-import React from "react";
 import ExploreBtn from "./components/ExploreBtn";
 import EventCard from "./components/EventCard";
 import events from "@/lib/constants";
+
 const Page = () => {
   return (
     <section>
@@ -18,7 +18,7 @@ const Page = () => {
         <h3>Featured Events</h3>
         <ul className="events">
           {events.map((event) => (
-            <li key={event.title}>
+            <li key={event.title} className="list-none">
               <EventCard {...event} />
             </li>
           ))}
