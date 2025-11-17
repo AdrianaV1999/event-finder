@@ -2,8 +2,12 @@ import ExploreBtn from "./components/ExploreBtn";
 import EventCard from "./components/EventCard";
 import { IEvent } from "@/database";
 import { cacheLife } from "next/cache";
+import { MouseEvent } from "react";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+interface ExploreBtnClientProps {
+  targetId: string;
+}
 
 const Page = async () => {
   "use cache";
@@ -21,7 +25,7 @@ const Page = async () => {
         Hackathons, Meetups, Conferences — All Together!
       </p>
       <ExploreBtn />
-      <div className="mt-30 space-y-7">
+      <div id="featured-events" className="mt-30 space-y-7">
         <h3>Featured Events</h3>
         <ul className="events">
           {events &&
