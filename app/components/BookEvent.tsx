@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import posthog from "posthog-js";
 
 const BookEvent = () => {
   const [email, setEmail] = useState("");
